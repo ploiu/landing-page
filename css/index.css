@@ -1,0 +1,29 @@
+@import "vars.css";
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 90%;
+}
+main {
+    height: 100%;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+}
+section#mainSiteList {
+    height: 85%;
+    width: 85%;
+    border-radius: 1em;
+    background: linear-gradient(var(--theme-primary), var(--theme-secondary));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5em;
+}
+
+site-element {
+    margin: 0.5em 1em;
+}

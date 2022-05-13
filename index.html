@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<main>
+    <!--if the user hasn't declared their siteList object-->
+    <h1 id="missingSiteList" style="display: none; color: red; font-size: xxx-large">
+        Missing <code>siteList</code> object. Declare one in ./js/sites.js like so:
+        <pre>
+            const siteList = [new Site('siteName', 'siteUrl', 'imageName')]
+        </pre>
+    </h1>
+    <section id="mainSiteList"></section>
+</main>
+<!--site template-->
+<template id="siteTemplate">
+    <link rel="stylesheet" href="./css/site.css">
+    <a target="_blank">
+        <img>
+        <span></span>
+    </a>
+</template>
+<script src="./js/SiteElement.js"></script>
+<script src="./js/sites.js"></script>
+<script src="./js/pageGenerator.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+:host, :root {
+    --theme-primary: royalblue;
+    --theme-secondary: indigo;
+    --theme-text: orangered;
+    --theme-font: 'Fira Code', monospace;
+}
