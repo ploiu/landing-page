@@ -20,7 +20,7 @@ Example:
 
 ```js
 const siteList = [
-  new Site("Google", "https://google.com", "google.png"),
+  new Site("Example", "https://www.example.com", "example.png"),
 ];
 ```
 

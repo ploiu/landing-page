@@ -1,4 +1,6 @@
 .idea
 *.iml
+
+# remove these lines if you want to push your custom landing page to your own repo
 js/sites.js
 img/*.png
