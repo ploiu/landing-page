@@ -16,7 +16,7 @@ main {
 section#mainSiteList {
     height: 85%;
     width: 85%;
-    border-radius: 1em;
+    border-radius: var(--container-border);
     background: linear-gradient(var(--theme-primary), var(--theme-secondary));
     display: flex;
     justify-content: center;

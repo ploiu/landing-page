@@ -3,4 +3,5 @@
     --theme-secondary: indigo;
     --theme-text: orangered;
     --theme-font: 'Fira Code', monospace;
+    --container-border: 1em;
 }

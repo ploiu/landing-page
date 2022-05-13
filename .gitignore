@@ -1,3 +1,4 @@
 .idea
 *.iml
 js/sites.js
+img/*.png
