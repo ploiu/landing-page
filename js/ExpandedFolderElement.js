@@ -20,8 +20,8 @@ class ExpandedFolderElement extends HTMLElement {
     });
     this.open();
     const closeButton = this.#shadow.querySelector("button.close");
-    const dialog = this.#shadow.querySelector('dialog')
-    dialog.addEventListener('close', () => this.close())
+    const dialog = this.#shadow.querySelector("dialog");
+    dialog.addEventListener("close", () => this.close());
     closeButton.addEventListener("click", () => dialog.close());
   }
 
@@ -41,7 +41,7 @@ class ExpandedFolderElement extends HTMLElement {
    */
   set sites(value) {
     this.#sites = value.map((site) => {
-      if (!site instanceof Site) {
+      if (!(site instanceof Site)) {
         throw "Folders cannot be nested!";
       }
       return SiteElement.fromSite(site);

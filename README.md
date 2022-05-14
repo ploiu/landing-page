@@ -24,6 +24,16 @@ const siteList = [
 ];
 ```
 
+Folders can also be created. Each folder can hold an unlimited number of sites,
+but folders cannot be nested:
+
+```js
+// ... siteList etc
+new Folder("folderName", [
+  new Site("Example", "https://www.example.com", "example.png"),
+]);
+```
+
 Images should be stored in `/img`
 
 ## Customizing
