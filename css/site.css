@@ -22,3 +22,17 @@ img {
     margin-bottom: 5px;
     border-radius: 10px;
 }
+
+@media screen and (max-width: 800px) and (min-width: 701px) {
+    a, img {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    a, img {
+        width: 70px;
+        height: 70px;
+    }
+}

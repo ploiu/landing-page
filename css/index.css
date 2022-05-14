@@ -2,6 +2,7 @@
 
 html {
     height: 100%;
+    overflow-y: hidden;
 }
 
 body {
@@ -22,8 +23,27 @@ section#mainSiteList {
     justify-content: center;
     align-items: center;
     padding-top: 0.5em;
+    flex-wrap: wrap;
 }
 
 site-element {
     margin: 0.5em 1em;
+}
+
+@media screen and (max-width: 1350px) and (min-width: 501px){
+
+    section#mainSiteList {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        padding: 0;
+        height: 95%;
+    }
+
+    body, section#mainSiteList {
+        height: 100%;
+    }
 }
