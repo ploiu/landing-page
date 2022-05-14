@@ -1,6 +1,6 @@
 # landing-page
 
-A simple, dependency-less, customizable web page for your browser to open up to
+A simple, dependency-less, customizable web page for your browser to open up to using Web Components.
 
 ## Features
 
