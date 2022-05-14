@@ -12,6 +12,19 @@ class SiteElement extends HTMLElement {
     this.#shadow.querySelector("img").src = this.dataset.img;
     this.#shadow.querySelector("span").innerText = this.dataset.title;
   }
+
+  /**
+   * creates a SiteElement from the given site object
+   * @param {Site} site
+   * @returns {SiteElement}
+   */
+  static fromSite(site) {
+    const siteElement = document.createElement("site-element");
+    siteElement.dataset.title = site.title;
+    siteElement.dataset.href = site.href;
+    siteElement.dataset.img = site.img;
+    return siteElement;
+  }
 }
 
 customElements.define("site-element", SiteElement);

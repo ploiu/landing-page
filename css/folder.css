@@ -1,0 +1,23 @@
+@import "vars.css";
+
+div.folder-wrapper {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: var(--theme-font);
+}
+
+.folder {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    outline: 2px solid;
+}
+
+.folder > img {
+    width: 30%;
+    height: 30%;
+    margin: 0 3%;
+}

@@ -5,10 +5,12 @@ if (!(globalThis.siteList ?? siteList)) {
   document.querySelector("#missingSiteList").style.display = null;
 } else {
   (globalThis.siteList ?? siteList).forEach((site) => {
-    const siteElement = document.createElement("site-element");
-    siteElement.dataset.title = site.title;
-    siteElement.dataset.href = site.href;
-    siteElement.dataset.img = site.img;
-    siteListElement.appendChild(siteElement);
+    if (site instanceof Site) {
+      const siteElement = SiteElement.fromSite(site);
+      siteListElement.appendChild(siteElement);
+    } else if (site instanceof Folder) {
+      const folderElement = SiteFolderElement.fromFolder(site);
+      siteListElement.appendChild(folderElement);
+    }
   });
 }

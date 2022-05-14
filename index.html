@@ -24,7 +24,28 @@
         <span></span>
     </a>
 </template>
+<!--site folder template-->
+<template id="folderTemplate">
+    <link rel="stylesheet" href="./css/folder.css">
+    <div class="folder-wrapper">
+        <div class="folder"></div>
+        <span class="folder-name"></span>
+    </div>
+</template>
+<!--expanded folder template (dialog box)-->
+<template id="expandedFolderTemplate">
+    <dialog>
+        <!--title and close button-->
+        <div class="title-row">
+            <span class="title"></span>
+            <button class="close">X</button>
+        </div>
+        <!--body with sites-->
+        <div class="dialog-body"></div>
+    </dialog>
+</template>
 <script src="./js/SiteElement.js"></script>
+<script src="./js/SiteFolderElement.js"></script>
 <script src="./js/sites.js"></script>
 <script src="./js/pageGenerator.js"></script>
 </body>
