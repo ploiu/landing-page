@@ -15,7 +15,7 @@ main {
     justify-content: center;
 }
 section#mainSiteList {
-    height: 85%;
+    height: 100%;
     width: 85%;
     border-radius: var(--container-border);
     background: linear-gradient(var(--theme-primary), var(--theme-secondary));
@@ -30,7 +30,7 @@ site-element {
     margin: 0.5em 1em;
 }
 
-@media screen and (max-width: 1350px) and (min-width: 501px){
+@media screen and (max-width: 1350px) and (min-width: 801px){
 
     section#mainSiteList {
         width: 100%;

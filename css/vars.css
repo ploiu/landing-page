@@ -4,4 +4,6 @@
     --theme-text: orangered;
     --theme-font: 'Fira Code', monospace;
     --container-border: 1em;
+    --site-folder-border: 10px;
+    --inactive-gray: 70%;
 }

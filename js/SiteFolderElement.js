@@ -26,6 +26,16 @@ class SiteFolderElement extends HTMLElement {
       image.src = site.img;
       folder.appendChild(image);
     });
+    // click handler for showing dialog
+    this.addEventListener("click", this.openFolder);
+  }
+
+  openFolder() {
+    /** @type {ExpandedFolderElement} */
+    const expandedFolder = document.createElement("expanded-folder");
+    expandedFolder.sites = this.#sites;
+    expandedFolder.name = this.dataset.name;
+    document.body.appendChild(expandedFolder);
   }
 
   /**
