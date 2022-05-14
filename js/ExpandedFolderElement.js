@@ -20,7 +20,9 @@ class ExpandedFolderElement extends HTMLElement {
     });
     this.open();
     const closeButton = this.#shadow.querySelector("button.close");
-    closeButton.addEventListener("click", () => this.close());
+    const dialog = this.#shadow.querySelector('dialog')
+    dialog.addEventListener('close', () => this.close())
+    closeButton.addEventListener("click", () => dialog.close());
   }
 
   open() {
@@ -30,7 +32,6 @@ class ExpandedFolderElement extends HTMLElement {
   }
 
   close() {
-    this.#shadow.querySelector("dialog").close();
     this.remove();
   }
 
