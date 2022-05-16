@@ -21,10 +21,14 @@ class SiteFolderElement extends HTMLElement {
       this.dataset.name;
     // we want to show small icons of each site we contain
     const folder = this.#shadow.querySelector("div.folder");
+    let siteCount = 0;
     this.#sites.forEach((site) => {
-      const image = document.createElement("img");
-      image.src = site.img;
-      folder.appendChild(image);
+      if (siteCount < 9) {
+        const image = document.createElement("img");
+        image.src = site.img;
+        folder.appendChild(image);
+      }
+      siteCount++;
     });
     // click handler for showing dialog
     this.addEventListener("click", this.openFolder);
