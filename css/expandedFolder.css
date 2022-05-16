@@ -35,7 +35,7 @@ div.dialog-title > button {
 div.dialog-body {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     flex-wrap: wrap;
 }
 
@@ -45,4 +45,8 @@ div.dialog-body > site-element:not(:last-child) {
 
 div.dialog-body > site-element:not(:first-child) {
     margin-left: 1rem;
+}
+
+div.dialog-body > site-element {
+    margin-bottom:  2vh;
 }
