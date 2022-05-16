@@ -21,12 +21,12 @@ section#mainSiteList {
     background: linear-gradient(var(--theme-primary), var(--theme-secondary));
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     padding-top: 0.5em;
     flex-wrap: wrap;
 }
 
-site-element {
+site-element, site-folder {
     margin: 0.5em 1em;
 }
 
