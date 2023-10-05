@@ -9,6 +9,7 @@ a {
     text-align: center;
     filter: grayscale(var(--inactive-gray));
     font-family: var(--theme-font);
+    font-size: var(--theme-font-size);
     word-wrap: anywhere;
 }
 

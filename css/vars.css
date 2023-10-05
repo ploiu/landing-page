@@ -4,6 +4,9 @@
     --theme-text: orangered;
     --theme-font: 'Fira Code', monospace;
     --container-border: 1em;
+    --theme-font-size: 16px;
+    /* for expanded folder title */
+    --theme-font-size-large: var(--theme-font-size);
     --site-folder-border: 10px;
     --inactive-gray: 70%;
 }

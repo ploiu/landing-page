@@ -6,6 +6,7 @@ div.folder-wrapper {
     flex-direction: column;
     text-align: center;
     font-family: var(--theme-font);
+    font-size: var(--theme-font-size);
     color: var(--theme-text);
 }
 

@@ -18,6 +18,7 @@ dialog::backdrop {
 div.dialog-title {
     padding-bottom: 5vh;
     font-family: var(--theme-font);
+    font-size: var(--theme-font-size-large);
     font-weight: bold;
 }
 
