@@ -1,6 +1,6 @@
 const siteListElement = document.querySelector("main > section#mainSiteList");
 // make sure to let the user know to set up their site list object
-if (!(globalThis.siteList ?? siteList)) {
+if (!globalThis.siteList && typeof siteList === "undefined") {
   siteListElement.remove();
   document.querySelector("#missingSiteList").style.display = null;
 } else {
