@@ -1,12 +1,14 @@
 :host, :root {
-    --theme-primary: royalblue;
-    --theme-secondary: indigo;
-    --theme-text: orangered;
-    --theme-font: 'Fira Code', monospace;
-    --container-border: 1em;
-    --theme-font-size: 16px;
-    /* for expanded folder title */
-    --theme-font-size-large: var(--theme-font-size);
-    --site-folder-border: 10px;
-    --inactive-gray: 70%;
+  --theme-primary: #e0e0e255;
+  --theme-secondary: #0077fa44;
+  --theme-tertiary: #00635d;
+  --theme-text: #e3b505;
+  --theme-font: "Fira Code", monospace;
+  --container-border: 5px;
+  --theme-font-size: 16px;
+  --background-image: url("add your background image here");
+  /* for expanded folder title */
+  --theme-font-size-large: var(--theme-font-size);
+  --site-folder-border: var(--container-border);
+  --inactive-gray: 70%;
 }

@@ -1,26 +1,26 @@
 @import "vars.css";
 
 a {
-    text-decoration: none;
-    color: var(--theme-text);
-    width: 100px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    filter: grayscale(var(--inactive-gray));
-    font-family: var(--theme-font);
-    font-size: var(--theme-font-size);
-    word-wrap: anywhere;
+  text-decoration: none;
+  color: var(--theme-text);
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  filter: grayscale(var(--inactive-gray));
+  font-family: var(--theme-font);
+  font-size: var(--theme-font-size);
+  word-wrap: anywhere;
 }
 
 a:hover {
-    filter: none;
-    font-weight: bold;
+  filter: none;
+  font-weight: bold;
 }
 
 img {
-    width: inherit;
-    height: 100px;
-    margin-bottom: 5px;
-    border-radius: var(--site-folder-border);
+  width: inherit;
+  height: 100px;
+  margin-bottom: 5px;
+  border-radius: var(--site-folder-border);
 }
