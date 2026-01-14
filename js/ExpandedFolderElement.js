@@ -28,6 +28,7 @@ class ExpandedFolderElement extends HTMLElement {
   open() {
     /** @type HTMLDialogElement */
     const dialog = this.#shadow.querySelector("dialog");
+dialog.setAttribute("closedby", "any");
     dialog.showModal();
   }
 
